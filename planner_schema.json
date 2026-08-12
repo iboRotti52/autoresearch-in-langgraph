@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "goal": {"type": "string"},
+    "changes": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 1
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["small", "structural"]
+    },
+    "reasoning": {"type": "string"}
+  },
+  "required": ["goal", "changes", "scope", "reasoning"],
+  "additionalProperties": false
+}

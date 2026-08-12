@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "properties": {
+    "edits": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "properties": {
+          "start_line": {"type": "integer", "minimum": 1},
+          "end_line": {"type": "integer", "minimum": 1},
+          "new_code": {"type": "string"}
+        },
+        "required": ["start_line", "end_line", "new_code"],
+        "additionalProperties": false
+      }
+    },
+    "code_changes": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 1
+    },
+    "code_change_reasoning": {"type": "string"}
+  },
+  "required": ["edits", "code_changes", "code_change_reasoning"],
+  "additionalProperties": false
+}

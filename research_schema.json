@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "idea": { "type": "string" },
+    "source": { "type": "string" },
+    "why_selected": { "type": "string" },
+    "evidence": { "type": "string" },
+    "hypothesis": { "type": "string" },
+    "expected_effect": { "type": "string" }
+  },
+  "required": [
+    "idea",
+    "source",
+    "why_selected",
+    "evidence",
+    "hypothesis",
+    "expected_effect"
+  ],
+  "additionalProperties": false
+}
